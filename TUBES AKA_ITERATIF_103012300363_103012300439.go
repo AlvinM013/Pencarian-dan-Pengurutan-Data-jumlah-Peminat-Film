@@ -17,6 +17,9 @@ func main() {
 	fmt.Println("Masukkan daftar film:")
 	inputfilm()
 	var opsi int
+	menu()
+	fmt.Print(">> Opsi: ")
+	fmt.Scan(&opsi)
 	for opsi != 5 {
 		menu()
 		fmt.Print(">> Opsi: ")
