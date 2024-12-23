@@ -5,10 +5,8 @@ import "fmt"
 type datamovie struct {
 	title        string
 	rating       float64
-	runtimeMenit int
 	thnRilis     int
 	nVote        int
-	director     string
 }
 
 const NMAX int = 300
@@ -51,7 +49,7 @@ func main() {
 func inputfilm() {
 	var i int = 0
 	for i < NMAX {
-		fmt.Scan(&listFilm[i].title, &listFilm[i].rating, &listFilm[i].runtimeMenit, &listFilm[i].thnRilis, &listFilm[i].director)
+		fmt.Scan(&listFilm[i].title, &listFilm[i].rating, &listFilm[i].nVote, &listFilm[i].thnRilis)
 		i += 1
 	}
 }
@@ -71,7 +69,7 @@ func menu() {
 func showList() {
 	var i int = 0
 	for i < NMAX {
-		fmt.Println((i + 1), listFilm[i].title, ", ", listFilm[i].rating, ", ", listFilm[i].runtimeMenit, ", ", listFilm[i].thnRilis, ", ", listFilm[i].director)
+		fmt.Println((i + 1), listFilm[i].title, ", ", listFilm[i].rating, ", ", listFilm[i].thnRilis, ", ", listFilm[i].nVote)
 		i += 1
 	}
 }
@@ -215,7 +213,7 @@ func searchMovieInYr() {
 	found := false
 	for i := 0; i < NMAX; i++ {
 		if listFilm[i].thnRilis == year {
-			fmt.Println((i + 1), listFilm[i].title, ", ", listFilm[i].rating, ", ", listFilm[i].runtimeMenit, ", ", listFilm[i].thnRilis, ", ", listFilm[i].director)
+			fmt.Println((i + 1), listFilm[i].title, ", ", listFilm[i].rating, ", ", listFilm[i].thnRilis, ", ", listFilm[i].nVote)
 			found = true
 		}
 	}
@@ -241,7 +239,7 @@ func searchMovieInYrRange() {
 	found := false
 	for i := 0; i < NMAX; i++ {
 		if listFilm[i].thnRilis >= yearA && listFilm[i].thnRilis <= yearB {
-			fmt.Println((i + 1), listFilm[i].title, ", ", listFilm[i].rating, ", ", listFilm[i].runtimeMenit, ", ", listFilm[i].thnRilis, ", ", listFilm[i].director)
+			fmt.Println((i + 1), listFilm[i].title, ", ", listFilm[i].rating, ", ", listFilm[i].thnRilis, ", ", listFilm[i].nVote)
 			found = true
 		}
 	}
