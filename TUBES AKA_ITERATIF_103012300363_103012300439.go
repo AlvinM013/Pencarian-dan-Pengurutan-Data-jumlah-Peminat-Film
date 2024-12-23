@@ -9,7 +9,7 @@ type datamovie struct {
 	nVote        int
 }
 
-const NMAX int = 300
+const NMAX int = 303
 
 var listFilm [NMAX]datamovie
 
