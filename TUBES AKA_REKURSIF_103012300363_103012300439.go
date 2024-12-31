@@ -14,7 +14,7 @@ const NMAX int = 303
 var listFilm [NMAX]datamovie
 
 func main() {
-	fmt.Println("Masukkan daftar film:")
+	fmt.Println("Masukkan daftar film (Judul, rating, jumlah vote, tahun rilis):")
 	inputfilm()
 	var opsi int
 	menu()
@@ -42,6 +42,7 @@ func main() {
 		case 5:
 			fmt.Println("Terima kasih!")
 			fmt.Println("<<============================>>")
+			break
 		default:
 			fmt.Println("Tolong masukkan opsi yang valid!")
 			fmt.Println("")
@@ -255,7 +256,7 @@ func searchMovieInYrRange() {
 func pilihAlgoritmaOpsi2() {
 	var opsi int
 	fmt.Print(">> ")
-	fmt.Scan("&opsi")
+	fmt.Scan(&opsi)
 	if opsi == 1 {
 		insertionSortOpsi2()
 	} else if opsi == 2 {
@@ -269,7 +270,7 @@ func pilihAlgoritmaOpsi2() {
 func pilihAlgoritmaOpsi3() {
 	var opsi int
 	fmt.Print(">> ")
-	fmt.Scan("&opsi")
+	fmt.Scan(&opsi)
 	if opsi == 1 {
 		insertionSortOpsi3()
 	} else if opsi == 2 {
