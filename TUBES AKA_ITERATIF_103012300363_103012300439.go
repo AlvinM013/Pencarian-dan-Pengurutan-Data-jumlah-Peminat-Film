@@ -240,12 +240,12 @@ func searchMovieInYrRange() {
 }
 
 func pilihAlgoritmaOpsi2() {
-	var opsi int
+	var pilih int
 	fmt.Print(">> ")
-	fmt.Scan(&opsi)
-	if opsi == 1 {
+	fmt.Scan(&pilih)
+	if pilih == 1 {
 		insertionSortOpsi2()
-	} else if opsi == 2 {
+	} else if pilih == 2 {
 		quickSortOpsi2()
 	} else {
 		fmt.Println("Opsi invalid!")
@@ -254,12 +254,12 @@ func pilihAlgoritmaOpsi2() {
 }
 
 func pilihAlgoritmaOpsi3() {
-	var opsi int
+	var pilih int
 	fmt.Print(">> ")
-	fmt.Scan(&opsi)
-	if opsi == 1 {
+	fmt.Scan(&pilih)
+	if pilih == 1 {
 		insertionSortOpsi3()
-	} else if opsi == 2 {
+	} else if pilih == 2 {
 		quickSortOpsi3()
 	} else {
 		fmt.Println("Opsi invalid!")
