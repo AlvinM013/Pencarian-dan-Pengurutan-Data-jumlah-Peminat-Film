@@ -256,7 +256,7 @@ func searchMovieInYrRange() {
 func pilihAlgoritmaOpsi2() {
 	var pilih int
 	fmt.Print(">> ")
-	fmt.Scan(&opsi)
+	fmt.Scan(&pilih)
 	if pilih == 1 {
 		insertionSortOpsi2()
 	} else if pilih == 2 {
@@ -270,7 +270,7 @@ func pilihAlgoritmaOpsi2() {
 func pilihAlgoritmaOpsi3() {
 	var pilih int
 	fmt.Print(">> ")
-	fmt.Scan(&opsi)
+	fmt.Scan(&pilih)
 	if pilih == 1 {
 		insertionSortOpsi3()
 	} else if pilih == 2 {
